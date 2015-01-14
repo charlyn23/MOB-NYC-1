@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Class_Exercise__InClass_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoA-uG-oa5">
+                                <rect key="frame" x="127" y="227" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AIn-aw-LU3"/>
+                                    <constraint firstAttribute="width" constant="46" id="GLt-Zq-o4a"/>
+                                </constraints>
+                                <state key="normal" title="Dog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Dog:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mTz-Dq-T9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWc-fg-rlK">
+                                <rect key="frame" x="424" y="227" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="KZc-1h-4kX"/>
+                                </constraints>
+                                <state key="normal" title="Cat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cat:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SIC-WT-iNM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8n-oS-PCe">
+                                <rect key="frame" x="121" y="91" width="359" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="359" id="Gtb-jJ-KzO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="EoA-uG-oa5" secondAttribute="bottom" constant="343" id="5XH-H0-CwL"/>
+                            <constraint firstItem="EoA-uG-oa5" firstAttribute="top" secondItem="l8n-oS-PCe" secondAttribute="bottom" constant="85" id="LUt-3D-bO7"/>
+                            <constraint firstItem="EoA-uG-oa5" firstAttribute="baseline" secondItem="OWc-fg-rlK" secondAttribute="baseline" id="Pb2-5X-K5y"/>
+                            <constraint firstItem="l8n-oS-PCe" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="drk-iG-IYf"/>
+                            <constraint firstAttribute="trailing" secondItem="OWc-fg-rlK" secondAttribute="trailing" constant="130" id="fz4-IP-KyD"/>
+                            <constraint firstItem="EoA-uG-oa5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="127" id="m4x-gJ-iW0"/>
+                            <constraint firstItem="l8n-oS-PCe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="71" id="ze7-wf-Xkh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalLabel" destination="l8n-oS-PCe" id="V3E-WD-OIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="340"/>
+        </scene>
+    </scenes>
+</document>
