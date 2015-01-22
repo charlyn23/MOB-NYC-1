@@ -80,5 +80,6 @@ class Match {
 
 var harryPotter = GoodPlayer(name: "Harry Potter")
 var voldemort = BadPlayer(name: "Voldemort")
+
 var epicBattle = Match(firstPlayerForThisGame: harryPotter, secondPlayerForThisGame: voldemort)
 epicBattle.playGame()

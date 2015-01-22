@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     let teachers = ["Rudd", "Travis", "Sean"]
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -26,6 +26,11 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         
         cell.textLabel?.text = teachers[indexPath.row]
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indesPath: NSIndexPath)
+    {
+        performSegueWithIdentifier("ourAmazingSegue", sender: nil)
     }
 }
 

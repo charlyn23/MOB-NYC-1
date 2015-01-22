@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A438D411A674A3300619059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A438D401A674A3300619059 /* AppDelegate.swift */; };
+		7A438D431A674A3300619059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A438D421A674A3300619059 /* ViewController.swift */; };
+		7A438D461A674A3300619059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A438D441A674A3300619059 /* Main.storyboard */; };
+		7A438D481A674A3300619059 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A438D471A674A3300619059 /* Images.xcassets */; };
+		7A438D4B1A674A3300619059 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A438D491A674A3300619059 /* LaunchScreen.xib */; };
+		7A438D571A674A3300619059 /* Modal_DismissTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A438D561A674A3300619059 /* Modal_DismissTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A438D511A674A3300619059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A438D331A674A3300619059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A438D3A1A674A3300619059;
+			remoteInfo = "Modal Dismiss";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A438D3B1A674A3300619059 /* Modal Dismiss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modal Dismiss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A438D3F1A674A3300619059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A438D401A674A3300619059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A438D421A674A3300619059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A438D451A674A3300619059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A438D471A674A3300619059 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7A438D4A1A674A3300619059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7A438D501A674A3300619059 /* Modal DismissTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Modal DismissTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A438D551A674A3300619059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A438D561A674A3300619059 /* Modal_DismissTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal_DismissTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A438D381A674A3300619059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A438D4D1A674A3300619059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A438D321A674A3300619059 = {
+			isa = PBXGroup;
+			children = (
+				7A438D3D1A674A3300619059 /* Modal Dismiss */,
+				7A438D531A674A3300619059 /* Modal DismissTests */,
+				7A438D3C1A674A3300619059 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A438D3C1A674A3300619059 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A438D3B1A674A3300619059 /* Modal Dismiss.app */,
+				7A438D501A674A3300619059 /* Modal DismissTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A438D3D1A674A3300619059 /* Modal Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				7A438D401A674A3300619059 /* AppDelegate.swift */,
+				7A438D421A674A3300619059 /* ViewController.swift */,
+				7A438D441A674A3300619059 /* Main.storyboard */,
+				7A438D471A674A3300619059 /* Images.xcassets */,
+				7A438D491A674A3300619059 /* LaunchScreen.xib */,
+				7A438D3E1A674A3300619059 /* Supporting Files */,
+			);
+			path = "Modal Dismiss";
+			sourceTree = "<group>";
+		};
+		7A438D3E1A674A3300619059 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A438D3F1A674A3300619059 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A438D531A674A3300619059 /* Modal DismissTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A438D561A674A3300619059 /* Modal_DismissTests.swift */,
+				7A438D541A674A3300619059 /* Supporting Files */,
+			);
+			path = "Modal DismissTests";
+			sourceTree = "<group>";
+		};
+		7A438D541A674A3300619059 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A438D551A674A3300619059 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A438D3A1A674A3300619059 /* Modal Dismiss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A438D5A1A674A3300619059 /* Build configuration list for PBXNativeTarget "Modal Dismiss" */;
+			buildPhases = (
+				7A438D371A674A3300619059 /* Sources */,
+				7A438D381A674A3300619059 /* Frameworks */,
+				7A438D391A674A3300619059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Modal Dismiss";
+			productName = "Modal Dismiss";
+			productReference = 7A438D3B1A674A3300619059 /* Modal Dismiss.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A438D4F1A674A3300619059 /* Modal DismissTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A438D5D1A674A3300619059 /* Build configuration list for PBXNativeTarget "Modal DismissTests" */;
+			buildPhases = (
+				7A438D4C1A674A3300619059 /* Sources */,
+				7A438D4D1A674A3300619059 /* Frameworks */,
+				7A438D4E1A674A3300619059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A438D521A674A3300619059 /* PBXTargetDependency */,
+			);
+			name = "Modal DismissTests";
+			productName = "Modal DismissTests";
+			productReference = 7A438D501A674A3300619059 /* Modal DismissTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A438D331A674A3300619059 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Charlyn Buchanan";
+				TargetAttributes = {
+					7A438D3A1A674A3300619059 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7A438D4F1A674A3300619059 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 7A438D3A1A674A3300619059;
+					};
+				};
+			};
+			buildConfigurationList = 7A438D361A674A3300619059 /* Build configuration list for PBXProject "Modal Dismiss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A438D321A674A3300619059;
+			productRefGroup = 7A438D3C1A674A3300619059 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A438D3A1A674A3300619059 /* Modal Dismiss */,
+				7A438D4F1A674A3300619059 /* Modal DismissTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A438D391A674A3300619059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A438D461A674A3300619059 /* Main.storyboard in Resources */,
+				7A438D4B1A674A3300619059 /* LaunchScreen.xib in Resources */,
+				7A438D481A674A3300619059 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A438D4E1A674A3300619059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A438D371A674A3300619059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A438D431A674A3300619059 /* ViewController.swift in Sources */,
+				7A438D411A674A3300619059 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A438D4C1A674A3300619059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A438D571A674A3300619059 /* Modal_DismissTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A438D521A674A3300619059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A438D3A1A674A3300619059 /* Modal Dismiss */;
+			targetProxy = 7A438D511A674A3300619059 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A438D441A674A3300619059 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A438D451A674A3300619059 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A438D491A674A3300619059 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A438D4A1A674A3300619059 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A438D581A674A3300619059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A438D591A674A3300619059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A438D5B1A674A3300619059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Modal Dismiss/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7A438D5C1A674A3300619059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Modal Dismiss/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7A438D5E1A674A3300619059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Modal DismissTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Modal Dismiss.app/Modal Dismiss";
+			};
+			name = Debug;
+		};
+		7A438D5F1A674A3300619059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Modal DismissTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Modal Dismiss.app/Modal Dismiss";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A438D361A674A3300619059 /* Build configuration list for PBXProject "Modal Dismiss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A438D581A674A3300619059 /* Debug */,
+				7A438D591A674A3300619059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A438D5A1A674A3300619059 /* Build configuration list for PBXNativeTarget "Modal Dismiss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A438D5B1A674A3300619059 /* Debug */,
+				7A438D5C1A674A3300619059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7A438D5D1A674A3300619059 /* Build configuration list for PBXNativeTarget "Modal DismissTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A438D5E1A674A3300619059 /* Debug */,
+				7A438D5F1A674A3300619059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A438D331A674A3300619059 /* Project object */;
+}

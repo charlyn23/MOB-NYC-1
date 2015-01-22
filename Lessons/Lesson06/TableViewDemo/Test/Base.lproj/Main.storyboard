@@ -34,10 +34,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="LUy-F7-vma"/>
+                    <connections>
+                        <segue destination="dVe-6V-491" kind="show" identifier="ourAmazingSegue" id="W42-GY-Gsf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPV-Xt-nLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="683" y="216"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hLq-qT-Tct">
+            <objects>
+                <viewController id="dVe-6V-491" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b96-6p-4Yg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z1R-7N-QdK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cRr-mn-Oxk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SwY-k4-hvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="216"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fyt-zt-NQr">
