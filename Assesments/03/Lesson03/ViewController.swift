@@ -20,11 +20,8 @@ class ViewController: UIViewController {
     func handleSwipes() {
         performSegueWithIdentifier("modalSegue", sender: nil)
         }
-    let pressDisplayTableView = UIButton(target: self, action: "pressedDisplayTableView")
-
+   // let pressDisplayTableView = UIButton(target: self, action: "pressedDisplayTableView")
 }
-
-
 
 
 
