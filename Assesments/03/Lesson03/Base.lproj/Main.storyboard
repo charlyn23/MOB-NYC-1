@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYx-YH-Kcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="407"/>
+            <point key="canvasLocation" x="-1135" y="791"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -51,15 +51,16 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-bY-Vru">
                                 <rect key="frame" x="236" y="382" width="128" height="30"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="DB9-Jg-gkA"/>
                                     <constraint firstAttribute="height" constant="30" id="dwV-ga-14C"/>
                                 </constraints>
-                                <state key="normal" title="Display Table View">
+                                <state key="normal" title="DisplayTableView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tH5-nV-9zA" kind="push" identifier="arrayPush" id="3iX-1r-LUq"/>
+                                    <action selector="didPressDisplayTableView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UkC-kM-H2z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,8 +74,9 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                     </view>
                     <navigationItem key="navigationItem" id="hzY-Hy-RMA"/>
                     <connections>
+                        <outlet property="displayButton" destination="AG3-bY-Vru" id="Q4G-fO-hO4"/>
                         <outlet property="swipeLabel" destination="NMl-Di-GNm" id="YJ3-tQ-ngA"/>
-                        <segue destination="tH5-nV-9zA" kind="show" identifier="show" id="O1F-Kb-DN0"/>
+                        <segue destination="tH5-nV-9zA" kind="show" identifier="arraySegue" id="bBF-jv-Hws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -84,17 +86,17 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="343" y="394"/>
+            <point key="canvasLocation" x="-409" y="798"/>
         </scene>
-        <!--Modal View-->
+        <!--ModalView-->
         <scene sceneID="PI9-zP-Yrf">
             <objects>
-                <viewController id="lik-7R-PWJ" userLabel="Modal View" customClass="ViewController" customModule="Lesson03" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lik-7R-PWJ" userLabel="ModalView" customClass="ModalView" customModule="Lesson03" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gXc-Nu-WZD"/>
                         <viewControllerLayoutGuide type="bottom" id="Afq-lo-jAn"/>
                     </layoutGuides>
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleAspectFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="800" id="MDH-Lz-IE9">
+                    <view key="view" contentMode="scaleAspectFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="800" id="MDH-Lz-IE9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -111,14 +113,17 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v2-im-sY1">
-                                <rect key="frame" x="247" y="508" width="107" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuz-et-Jpj">
+                                <rect key="frame" x="271" y="525" width="58" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="FbT-nN-8Pf"/>
+                                    <constraint firstAttribute="width" constant="58" id="975-GH-Ajh"/>
                                 </constraints>
                                 <state key="normal" title="Dismiss">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressDismiss:" destination="lik-7R-PWJ" eventType="touchUpInside" id="jiD-iD-9ef"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,14 +131,13 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                             <accessibilityTraits key="traits" none="YES" image="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="PWJ-ci-Z4B" firstAttribute="top" secondItem="6v2-im-sY1" secondAttribute="bottom" constant="-438" id="Dro-9H-H3Z"/>
+                            <constraint firstItem="uuz-et-Jpj" firstAttribute="top" secondItem="PWJ-ci-Z4B" secondAttribute="bottom" constant="25" id="5LD-9G-baE"/>
                             <constraint firstAttribute="centerY" secondItem="PWJ-ci-Z4B" secondAttribute="centerY" id="Ej4-e7-cuC"/>
                             <constraint firstAttribute="centerX" secondItem="PWJ-ci-Z4B" secondAttribute="centerX" id="FCq-qE-pC7"/>
                             <constraint firstAttribute="centerY" secondItem="PWJ-ci-Z4B" secondAttribute="centerY" id="KJ8-Zz-3io"/>
                             <constraint firstAttribute="centerY" secondItem="PWJ-ci-Z4B" secondAttribute="centerY" id="Kzk-Vo-d2y"/>
                             <constraint firstAttribute="centerX" secondItem="PWJ-ci-Z4B" secondAttribute="centerX" id="PpA-A3-Ydg"/>
-                            <constraint firstItem="6v2-im-sY1" firstAttribute="top" secondItem="PWJ-ci-Z4B" secondAttribute="bottom" constant="8" symbolic="YES" id="cRV-zA-tZ1"/>
-                            <constraint firstItem="6v2-im-sY1" firstAttribute="centerX" secondItem="PWJ-ci-Z4B" secondAttribute="centerX" id="iGh-7U-K7I"/>
+                            <constraint firstItem="uuz-et-Jpj" firstAttribute="centerX" secondItem="PWJ-ci-Z4B" secondAttribute="centerX" id="ZJt-ad-pWK"/>
                             <constraint firstItem="Afq-lo-jAn" firstAttribute="top" secondItem="PWJ-ci-Z4B" secondAttribute="bottom" constant="100" id="jYe-eV-bnw"/>
                             <constraint firstAttribute="centerX" secondItem="PWJ-ci-Z4B" secondAttribute="centerX" id="kuG-rg-fev"/>
                             <constraint firstAttribute="centerY" secondItem="PWJ-ci-Z4B" secondAttribute="centerY" id="pZw-Vo-Bix"/>
@@ -141,7 +145,6 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Dro-9H-H3Z"/>
                                 <exclude reference="Ej4-e7-cuC"/>
                                 <exclude reference="FCq-qE-pC7"/>
                                 <exclude reference="KJ8-Zz-3io"/>
@@ -154,7 +157,7 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FwA-Mo-XQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="1126"/>
+            <point key="canvasLocation" x="243" y="1534"/>
         </scene>
         <!--Array Table View Controller-->
         <scene sceneID="hS5-QX-ITe">
@@ -164,22 +167,15 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="tH5-nV-9zA" id="hWp-7m-lXf"/>
-                            <outlet property="delegate" destination="tH5-nV-9zA" id="sq9-e2-t6c"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="fHA-6g-IIA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuN-we-tcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018" y="407"/>
+            <point key="canvasLocation" x="393" y="785"/>
         </scene>
     </scenes>
     <resources>
         <image name="nineties" width="610" height="954"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="3iX-1r-LUq"/>
-    </inferredMetricsTieBreakers>
 </document>

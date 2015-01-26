@@ -9,11 +9,29 @@
 import UIKit
 
 class ArrayTableViewController: UITableViewController {
+
+    
+    
+    
+    
+//    let swipeItem = UISwipeGestureRecognizer(target: self, action: "handleSwipes")
+//    self.view.addGestureRecognizer(swipeItem)
+//}
+//
+//@IBOutlet weak var swipeLabel: UILabel!
+//func handleSwipes() {
+//    performSegueWithIdentifier("modalSegue", sender: nil)
+    
+    
+    
+    
+    
+    
     
     /*
         TODO five: Create a subclass of the Animal class, add an instance of that object to be displayed in the table view, then change the displayed string of the subclass to your liking. Your subclass should override the function 'prettyAnimalName' (i.e. you should only need to modify the below array, not the table view code)
     */
-    let animalArray = [Animal(name: "Rover"), Animal(name: "Mittens"), Animal(name: "Ein"), Animal(name: "Sadie")]
+    let animalArray = [Animal(name: "Rover"), Animal(name: "Mittens"), Animal(name: "Ein"), Animal(name: "Sadie"), Cat(name: "Whiskers"), Cat(name: "Razzasass")]
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -29,5 +47,7 @@ class ArrayTableViewController: UITableViewController {
         cell.textLabel?.text = animalArray[indexPath.row].prettyAnimalName()
         
         return cell
-    }
+
+
+}
 }

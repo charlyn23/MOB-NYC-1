@@ -14,7 +14,8 @@
 		5DCED99F19D8DC9B00DE1DC2 /* Lesson03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED99E19D8DC9B00DE1DC2 /* Lesson03Tests.swift */; };
 		5DCED9A919D8DF0800DE1DC2 /* ArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9A819D8DF0800DE1DC2 /* ArrayTableViewController.swift */; };
 		5DCED9AB19D8DF4E00DE1DC2 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCED9AA19D8DF4E00DE1DC2 /* Animal.swift */; };
-		7AF07DEC1A704EC700EFBB55 /* Modal Dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF07DEB1A704EC700EFBB55 /* Modal Dismiss.swift */; };
+		7A8E62F21A71CA8C005AB310 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E62F11A71CA8C005AB310 /* ModalView.swift */; };
+		7AA5BA2F1A7414B100E060E6 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5BA2E1A7414B100E060E6 /* Cat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,8 @@
 		5DCED99E19D8DC9B00DE1DC2 /* Lesson03Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson03Tests.swift; sourceTree = "<group>"; };
 		5DCED9A819D8DF0800DE1DC2 /* ArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewController.swift; sourceTree = "<group>"; };
 		5DCED9AA19D8DF4E00DE1DC2 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
-		7AF07DEB1A704EC700EFBB55 /* Modal Dismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Modal Dismiss.swift"; sourceTree = "<group>"; };
+		7A8E62F11A71CA8C005AB310 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		7AA5BA2E1A7414B100E060E6 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +85,11 @@
 			children = (
 				5DCED9A819D8DF0800DE1DC2 /* ArrayTableViewController.swift */,
 				5DCED9AA19D8DF4E00DE1DC2 /* Animal.swift */,
+				7AA5BA2E1A7414B100E060E6 /* Cat.swift */,
 				5DCED98819D8DC9B00DE1DC2 /* AppDelegate.swift */,
 				5DCED98A19D8DC9B00DE1DC2 /* ViewController.swift */,
-				7AF07DEB1A704EC700EFBB55 /* Modal Dismiss.swift */,
 				5DCED98C19D8DC9B00DE1DC2 /* Main.storyboard */,
+				7A8E62F11A71CA8C005AB310 /* ModalView.swift */,
 				5DCED98F19D8DC9B00DE1DC2 /* Images.xcassets */,
 				5DCED98619D8DC9B00DE1DC2 /* Supporting Files */,
 			);
@@ -218,8 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCED9A919D8DF0800DE1DC2 /* ArrayTableViewController.swift in Sources */,
+				7A8E62F21A71CA8C005AB310 /* ModalView.swift in Sources */,
+				7AA5BA2F1A7414B100E060E6 /* Cat.swift in Sources */,
 				5DCED9AB19D8DF4E00DE1DC2 /* Animal.swift in Sources */,
-				7AF07DEC1A704EC700EFBB55 /* Modal Dismiss.swift in Sources */,
 				5DCED98B19D8DC9B00DE1DC2 /* ViewController.swift in Sources */,
 				5DCED98919D8DC9B00DE1DC2 /* AppDelegate.swift in Sources */,
 			);

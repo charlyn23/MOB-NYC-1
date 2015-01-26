@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -20,7 +21,21 @@ class ViewController: UIViewController {
     func handleSwipes() {
         performSegueWithIdentifier("modalSegue", sender: nil)
         }
-   // let pressDisplayTableView = UIButton(target: self, action: "pressedDisplayTableView")
+    
+    
+ //   let tapDisplayButton = UITapGestureRecognizer(target: self, action: "displayTable")
+    
+    
+    @IBOutlet weak var displayButton: UIButton!
+
+    
+    @IBAction func didPressDisplayTableView(sender: AnyObject) {
+        performSegueWithIdentifier("arraySegue", sender: nil)
+    }
+    
+    
+//    let pressDisplayTableView = UIButton(target: self, action: Selector )
+
 }
 
 
