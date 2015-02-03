@@ -9,7 +9,13 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    var todos = ["groceries", "homework", "walk dog"]
+    var todo =  [()]
+    
+    func addTodo(keyname: String, keystatus: String, keydate: String){
+        var elm = (name: keyname, status: keystatus, date:keydate)
+        todo.append(elm)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,7 +54,7 @@ class MainTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
         
-        cell.textLabel?.text = todos[indexPath.row]
+        cell.textLabel?.text = todos[indexPath.row] +
         //This is to change row text to the todos//
         return cell
     }

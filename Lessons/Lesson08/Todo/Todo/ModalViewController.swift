@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ModalViewController: UIViewController {
+class ModalViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var textField: UITextField!
     var todoViewController: MainTableViewController?

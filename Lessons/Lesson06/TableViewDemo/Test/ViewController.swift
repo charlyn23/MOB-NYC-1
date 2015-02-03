@@ -28,14 +28,10 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-<<<<<<< HEAD
+//<<<<<<< HEAD
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indesPath: NSIndexPath)
     {
         performSegueWithIdentifier("ourAmazingSegue", sender: nil)
-=======
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
->>>>>>> 55f1a21b75189d5e8f480a4ac1c25e16da6ea937
     }
-}
-
+//
+//        override func tableView(tableView:UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)

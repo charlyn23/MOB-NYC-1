@@ -10,10 +10,18 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
-    var todos = ["groceries", "homework", "walk dog"]
+  //  var todos = ["groceries", "homework", "walk dog"]
+    
+  //  var arrayOfDictionaries = [["Dylan":"Jan26"], ["Charlyn":"Oct23"], ["Sam":"July4"]]
+    
+ //   var textEntered: [String:String] = text
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     //   println(arrayOfDictionaries)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,15 +51,18 @@ class MainTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todos.count
+        return arrayOfDictionaries.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = todos[indexPath.row]
+        cell.textLabel?.text = arrayOfDictionaries[indexPath.row]
         return cell
     }
+    
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+//    {
 
     /*
     // Override to support conditional editing of the table view.

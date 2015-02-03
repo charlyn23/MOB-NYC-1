@@ -8,6 +8,9 @@ var zing: Array<String> = []
 var bar = ["boooooooooo!"]
 
 // Dicts
+
+
+
 var baz: [String: String] = [:]
 var bif = ["foo": "bar"]
 var ping: Dictionary<String, String> = [:]
@@ -34,4 +37,24 @@ todos[0]
 todos[1]
 
 todos[0]["name"]
+
+var babyAnimals: [[String: String]] = []
+
+["Cat": "Kitten"]
+babyAnimals.append(["Dog" : "Puppy"])
+babyAnimals
+babyAnimals.append(["Cat": "Kitten"])
+babyAnimals.append(["Kangaroo": "Joey"])
+babyAnimals.append(["Duck" : "Duckling"])
+
+var animalName
+
+
+
+
+
+
+//var babyAnimals = ["Cat": "Kitten","Dog":"Puppy"]
+
+
 
