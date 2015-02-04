@@ -33,7 +33,9 @@ var arrayOfDicts: [[String: String]] = [
     ]
 ]
 
-arrayOfDicts[0]
+
+
+
 
 
 
