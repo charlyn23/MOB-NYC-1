@@ -45,18 +45,6 @@ class ArrayViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         cell.textLabel?.text = groceryList[indexPath.row]
         return cell
     }
-    
-        
-
-        
-        
-        
-//Accept textfield.text when did press returnKey
-//        optional var enablesReturnKeyAutomatically: Bool { get set }
-        
-        
-//Create func to change array (append?) by recieving textfield.text when return key is pressed
-
         
         
         /*

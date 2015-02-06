@@ -25,13 +25,18 @@ class MapViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
         super.viewDidLoad()
         keyTextField.delegate = self
         valueTextField.delegate = self
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow", name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide", name: UIKeyboardWillHideNotification, object: nil)
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+
+        
     }
     func keyboardWillShow(notification: NSNotification) {
         keyTextField.backgroundColor = UIColor.blueColor()
         valueTextField.backgroundColor = UIColor.blueColor()
         
+    }
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -61,14 +66,17 @@ class MapViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         babyAnimalsDictionary[keyTextField.text] = "\(valueTextField.text)"
-        
+        self.view.endEditing(true);
+        keyTextField.backgroundColor = UIColor.redColor()
+        valueTextField.backgroundColor = UIColor.redColor()
         println(babyAnimalsDictionary)
         dictionaryTableView.reloadData()
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
         
         if keyTextField == textField {
             valueTextField.becomeFirstResponder()
-        }
-        else if valueTextField == textField {
+        } else if valueTextField == textField {
             let key = keyTextField.text
             let value = valueTextField.text
             
@@ -78,5 +86,6 @@ class MapViewController: UIViewController, UITextFieldDelegate, UITableViewDeleg
             
         }
         return true
+
     }
 }
