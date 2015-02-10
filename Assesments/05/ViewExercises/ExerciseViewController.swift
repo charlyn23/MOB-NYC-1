@@ -15,6 +15,7 @@ class ExerciseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.exerciseDescription.frame = self.view.frame
         self.exerciseDescription.numberOfLines = 0
         self.exerciseDescription.frame = self.view.frame

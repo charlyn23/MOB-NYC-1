@@ -41,6 +41,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JpW-pR-JGu"/>
                     <connections>
+                        <outlet property="firstViewControllerNavigationBar" destination="JpW-pR-JGu" id="Hod-cl-U6C"/>
                         <segue destination="O7c-4W-niS" kind="show" identifier="two" id="Zfz-lm-fXZ"/>
                     </connections>
                 </viewController>
@@ -101,6 +102,11 @@
                     <view key="view" contentMode="scaleToFill" id="ByP-aw-nz1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SjS-xy-Wcd">
+                                <rect key="frame" x="0.0" y="0.0" width="649" height="620"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -123,12 +129,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3ll-XM-4Nw" appends="YES" id="Nec-xO-tQp"/>
+                        </connections>
                     </view>
                     <connections>
                         <segue destination="iIp-Ya-i6t" kind="show" identifier="six" id="DOm-vW-v2t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ve-ln-Lah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="3ll-XM-4Nw"/>
             </objects>
             <point key="canvasLocation" x="3368" y="178"/>
         </scene>
@@ -149,23 +160,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2p4-Lm-6Gp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4060" y="178"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wjv-ya-6W9">
-            <objects>
-                <viewController id="uhv-gk-lmv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xnF-lm-Pv5"/>
-                        <viewControllerLayoutGuide type="bottom" id="gAF-hU-Blk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="niy-0R-Nrg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mTs-Gf-6K7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
 </document>
