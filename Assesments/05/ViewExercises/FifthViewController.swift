@@ -23,6 +23,7 @@ class FifthViewController: ExerciseViewController {
         
         Your view should be in self.exerciseView, not self.view
         */
+//
         autoLayout()
     }
     
@@ -31,9 +32,7 @@ class FifthViewController: ExerciseViewController {
         
         var tapMeButton = UIButton()
       //  tapMeButton.titleLabel = UIFont.systemFontOfSize(12)
-        tapMeButton.titleLabel?.text = "Tap me"
-        
-       // var exerciseView = UIView()
+      //  tapMeButton.titleLabel?.text = "Tap me"
         
         
         self.view.addSubview(exerciseView)
@@ -91,7 +90,7 @@ class FifthViewController: ExerciseViewController {
             multiplier: 1.0,
             constant: -44))
         
-        exerciseView.layer.borderWidth = 2
+      //  exerciseView.layer.borderWidth = 2
         
         //BUTTON
         view.addConstraint(NSLayoutConstraint(
@@ -165,12 +164,12 @@ class FifthViewController: ExerciseViewController {
         //Button Animation: up 20+ turn red, then back down +  turn green
         
         
-    tapMeButton.addTarget(self, action: Selector("widgetTapped:"), forControlEvents: UIControlEvents.TouchUpInside)
-}
-
-func tapMeButtonTapped(sender: UIButton) {
-    animateTapMeButton()
-}
+//    tapMeButton.addTarget(self, action: Selector("tapMeButtonTapped:"), forControlEvents: UIControlEvents.TouchUpInside)
+//}
+//
+//func tapMeButtonTapped(sender: UIButton) {
+//    animateTapMeButton()
+//}
 //
 //func animateTapMeButton() {
 //    tapMeButtonIsHome = !tapMeButtonIsHome

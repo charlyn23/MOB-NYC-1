@@ -53,7 +53,7 @@ class ThirdViewController: ExerciseViewController {
         boxFour.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         //EXERCISE VIEW
-        view.addConstraint(NSLayoutConstraint(
+        self.view.addConstraint(NSLayoutConstraint(
             item: exerciseView,
             attribute: .Top,
             relatedBy: .Equal,

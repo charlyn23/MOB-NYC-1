@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         self.view.addSubview(button)
         button.addTarget(self, action: "didTapButton", forControlEvents: UIControlEvents.TouchUpInside)
     
-    
+//        var square = UIView(frame: <#CGRect#>(x: o, y: 0, width: 100, height: 100))
+//        square.backgroundcolor = UIColor.blueColor()
     }
     
     func didTapButton() {
