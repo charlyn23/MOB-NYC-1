@@ -405,6 +405,7 @@
 				7AD35CBC1A8AD86D000A535A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AD35CBD1A8AD86D000A535A /* Build configuration list for PBXNativeTarget "Midterm CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				7AD35CBF1A8AD86D000A535A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
