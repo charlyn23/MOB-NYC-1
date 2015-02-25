@@ -9,9 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UIAlertViewDelegate {
-
-    var items: [String] = []
     
+
+    func returnPath() -> NSURL {
+        var directoryPath = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as NSURL
+        return directoryPath.URLByAppendingPathComponent("todoPlist.plist")
+
+    }
+
+    var items: [String] = ["groceries", "walk the dog", "laundry"]
+    var filePath = NSBundle.mainBundle().pathForResource("todoPlist", ofType: "plist")
+ 
     @IBAction func didTapAdd(sender: AnyObject) {
         var alert = UIAlertView(title: "Item Name?", message: "Enter an item name", delegate: self, cancelButtonTitle: "Dismiss", otherButtonTitles: "Add")
         alert.alertViewStyle = UIAlertViewStyle.PlainTextInput
@@ -23,15 +31,28 @@ class ViewController: UIViewController, UITableViewDataSource, UIAlertViewDelega
             if let textInAlert = alertView.textFieldAtIndex(0)?.text {
                 self.items.append(textInAlert)
                 self.tableView.reloadData()
+                (self.items as NSArray).writeToURL(returnPath(), atomically: true)
+            
             }
-        }
+            
+             }
+        
     }
+    
+
+    
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    println(returnPath())
+        
+        if let items = NSArray(contentsOfURL: returnPath()) {
+            self.items = items as [String]
+        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
