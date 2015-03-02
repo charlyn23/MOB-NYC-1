@@ -13,4 +13,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+        @IBOutlet weak var firstTextView: UITextView!
+
+
 }

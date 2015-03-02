@@ -17,7 +17,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     }
     
     override func viewDidAppear(animated: Bool) {
-        if let url = NSURL(string: "http://www.mashable.com/stories.json") {
+        if let url = NSURL(string: "http://www.reddit.com/.json") {
             let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
                 var jsonError: NSError?
                 if let jsonDict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: &jsonError) as? NSDictionary {
@@ -37,8 +37,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    //Mashable tree:
-    // new -> "" -> title ->
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let json = self.json {
             if let data = json["data"] as? NSDictionary {
@@ -57,28 +56,33 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         }
         
         if let json = self.json {
-            if let data = json["new"] as? NSDictionary {
-                if let children = data["title"] as? NSDictionary {
-                 if let child = children[indexPath.row] as? NSDictionary {
+            if let data = json["data"] as? NSDictionary {
+                if let children = data["children"] as? NSArray {
+                    if let child = children[indexPath.row] as? NSDictionary {
                         if let data = child["data"] as? NSDictionary {
                             if let title = data["title"] as? NSString {
                                 cell.textLabel?.text = title
                                 return cell
+                            }
                         }
-                    } 
+                    }
                 }
             }
         }
+        
+        
     }
-    }
-          override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-            if let json = self.json {
-                if let data = json["new"] as? NSDictionary {
-                    if let children = data["title"] as? NSDictionary {
-                        if let child = children[indexPath.row] as? NSDictionary {
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let json = self.json {
+            if let data = json["data"] as? NSDictionary {
+                if let children = data["children"] as? NSArray {
+                    if let child = children[indexPath.row] as? NSDictionary {
+                        if let data = child["data"] as? NSDictionary {
                             if let permalink = data["permalink"] as? NSString {
-                                if let url = NSURL(string: "http://mashable.com/stories" + permalink) {
+                                if let url = NSURL(string: "http://reddit.com" + permalink) {
                                     performSegueWithIdentifier("web", sender: NSURLRequest(URL: url))
+                                }
                             }
                         }
                     }
@@ -86,31 +90,12 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
             }
         }
     }
-}
-
-//
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        if let json = self.json {
-//            if let data = json["data"] as? NSDictionary {
-//                if let children = data["children"] as? NSArray {
-//                    if let child = children[indexPath.row] as? NSDictionary {
-//                        if let data = child["data"] as? NSDictionary {
-//                            if let permalink = data["permalink"] as? NSString {
-//                                if let url = NSURL(string: "http://reddit.com" + permalink) {
-//                                    performSegueWithIdentifier("web", sender: NSURLRequest(URL: url))
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let request = sender as? NSURLRequest {
             var destinationViewController = segue.destinationViewController as WebViewController
             destinationViewController.request = request
-            }
         }
     }
+}
+
