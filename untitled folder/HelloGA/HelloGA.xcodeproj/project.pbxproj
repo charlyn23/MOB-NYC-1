@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A7F19C91A367727008AAB04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F19C81A367727008AAB04 /* AppDelegate.swift */; };
+		7A7F19CB1A367727008AAB04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F19CA1A367727008AAB04 /* ViewController.swift */; };
+		7A7F19CE1A367727008AAB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F19CC1A367727008AAB04 /* Main.storyboard */; };
+		7A7F19D01A367727008AAB04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F19CF1A367727008AAB04 /* Images.xcassets */; };
+		7A7F19D31A367727008AAB04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F19D11A367727008AAB04 /* LaunchScreen.xib */; };
+		7A7F19DF1A367727008AAB04 /* HelloGATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F19DE1A367727008AAB04 /* HelloGATests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A7F19D91A367727008AAB04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A7F19BB1A367727008AAB04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A7F19C21A367727008AAB04;
+			remoteInfo = HelloGA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A7F19C31A367727008AAB04 /* HelloGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloGA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7F19C71A367727008AAB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7F19C81A367727008AAB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A7F19CA1A367727008AAB04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A7F19CD1A367727008AAB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A7F19CF1A367727008AAB04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7A7F19D21A367727008AAB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7A7F19D81A367727008AAB04 /* HelloGATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloGATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7F19DD1A367727008AAB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7F19DE1A367727008AAB04 /* HelloGATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloGATests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A7F19C01A367727008AAB04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7F19D51A367727008AAB04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A7F19BA1A367727008AAB04 = {
+			isa = PBXGroup;
+			children = (
+				7A7F19C51A367727008AAB04 /* HelloGA */,
+				7A7F19DB1A367727008AAB04 /* HelloGATests */,
+				7A7F19C41A367727008AAB04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A7F19C41A367727008AAB04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F19C31A367727008AAB04 /* HelloGA.app */,
+				7A7F19D81A367727008AAB04 /* HelloGATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A7F19C51A367727008AAB04 /* HelloGA */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F19C81A367727008AAB04 /* AppDelegate.swift */,
+				7A7F19CA1A367727008AAB04 /* ViewController.swift */,
+				7A7F19CC1A367727008AAB04 /* Main.storyboard */,
+				7A7F19CF1A367727008AAB04 /* Images.xcassets */,
+				7A7F19D11A367727008AAB04 /* LaunchScreen.xib */,
+				7A7F19C61A367727008AAB04 /* Supporting Files */,
+			);
+			path = HelloGA;
+			sourceTree = "<group>";
+		};
+		7A7F19C61A367727008AAB04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F19C71A367727008AAB04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A7F19DB1A367727008AAB04 /* HelloGATests */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F19DE1A367727008AAB04 /* HelloGATests.swift */,
+				7A7F19DC1A367727008AAB04 /* Supporting Files */,
+			);
+			path = HelloGATests;
+			sourceTree = "<group>";
+		};
+		7A7F19DC1A367727008AAB04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F19DD1A367727008AAB04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A7F19C21A367727008AAB04 /* HelloGA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7F19E21A367727008AAB04 /* Build configuration list for PBXNativeTarget "HelloGA" */;
+			buildPhases = (
+				7A7F19BF1A367727008AAB04 /* Sources */,
+				7A7F19C01A367727008AAB04 /* Frameworks */,
+				7A7F19C11A367727008AAB04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloGA;
+			productName = HelloGA;
+			productReference = 7A7F19C31A367727008AAB04 /* HelloGA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A7F19D71A367727008AAB04 /* HelloGATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7F19E51A367727008AAB04 /* Build configuration list for PBXNativeTarget "HelloGATests" */;
+			buildPhases = (
+				7A7F19D41A367727008AAB04 /* Sources */,
+				7A7F19D51A367727008AAB04 /* Frameworks */,
+				7A7F19D61A367727008AAB04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A7F19DA1A367727008AAB04 /* PBXTargetDependency */,
+			);
+			name = HelloGATests;
+			productName = HelloGATests;
+			productReference = 7A7F19D81A367727008AAB04 /* HelloGATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A7F19BB1A367727008AAB04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Charlyn Buchanan";
+				TargetAttributes = {
+					7A7F19C21A367727008AAB04 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7A7F19D71A367727008AAB04 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 7A7F19C21A367727008AAB04;
+					};
+				};
+			};
+			buildConfigurationList = 7A7F19BE1A367727008AAB04 /* Build configuration list for PBXProject "HelloGA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A7F19BA1A367727008AAB04;
+			productRefGroup = 7A7F19C41A367727008AAB04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A7F19C21A367727008AAB04 /* HelloGA */,
+				7A7F19D71A367727008AAB04 /* HelloGATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A7F19C11A367727008AAB04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7F19CE1A367727008AAB04 /* Main.storyboard in Resources */,
+				7A7F19D31A367727008AAB04 /* LaunchScreen.xib in Resources */,
+				7A7F19D01A367727008AAB04 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7F19D61A367727008AAB04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A7F19BF1A367727008AAB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7F19CB1A367727008AAB04 /* ViewController.swift in Sources */,
+				7A7F19C91A367727008AAB04 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7F19D41A367727008AAB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7F19DF1A367727008AAB04 /* HelloGATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A7F19DA1A367727008AAB04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A7F19C21A367727008AAB04 /* HelloGA */;
+			targetProxy = 7A7F19D91A367727008AAB04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A7F19CC1A367727008AAB04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A7F19CD1A367727008AAB04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A7F19D11A367727008AAB04 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A7F19D21A367727008AAB04 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A7F19E01A367727008AAB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A7F19E11A367727008AAB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A7F19E31A367727008AAB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloGA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7A7F19E41A367727008AAB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloGA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7A7F19E61A367727008AAB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloGATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloGA.app/HelloGA";
+			};
+			name = Debug;
+		};
+		7A7F19E71A367727008AAB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloGATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloGA.app/HelloGA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A7F19BE1A367727008AAB04 /* Build configuration list for PBXProject "HelloGA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7F19E01A367727008AAB04 /* Debug */,
+				7A7F19E11A367727008AAB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7F19E21A367727008AAB04 /* Build configuration list for PBXNativeTarget "HelloGA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7F19E31A367727008AAB04 /* Debug */,
+				7A7F19E41A367727008AAB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7A7F19E51A367727008AAB04 /* Build configuration list for PBXNativeTarget "HelloGATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7F19E61A367727008AAB04 /* Debug */,
+				7A7F19E71A367727008AAB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A7F19BB1A367727008AAB04 /* Project object */;
+}
