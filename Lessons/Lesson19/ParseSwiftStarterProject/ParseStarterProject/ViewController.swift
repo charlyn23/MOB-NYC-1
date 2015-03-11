@@ -15,6 +15,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         didSet {
             self.mapView.removeAnnotations(self.mapView.annotations)
             self.mapView.addAnnotations(self.mapItems)
+            //self.mapView.addAnnotations(self.mapItems)
         }
     }
     
@@ -28,7 +29,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     }
     
     @IBAction func didTapAdd(sender: AnyObject) {
-        var alert = UIAlertView(title: "Add Place", message: "Enter a place name", delegate: self, cancelButtonTitle: "Dismiss", otherButtonTitles: "Add")
+        var alert = UIAlertView(title: "Add Place", message: "Enter a place name", delegate: self, cancelButtonTitle: "Dismiss", otherButtonTitles: "Add") //can have more than two buttons
         alert.alertViewStyle = .PlainTextInput
         alert.show()
     }
@@ -46,9 +47,11 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         var searchRequest = MKLocalSearchRequest()
         searchRequest.naturalLanguageQuery = name
         var search = MKLocalSearch(request: searchRequest)
+        //below is a closure that is called asynchronousely and some time in the future. 
         search.startWithCompletionHandler { (response, error) -> Void in
             if let mapItem = response.mapItems.first as? MKMapItem {
                 var mapItem = MapPlace(coordinate: mapItem.placemark.coordinate)
+                mapItem.name = name
                 self.mapItems.append(mapItem)
             }
         }
